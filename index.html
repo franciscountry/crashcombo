@@ -30,7 +30,13 @@
       place-items: center;
     }
     .badge img { width: 60%; height: auto; display: block; }
-    .fb {
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .social a {
       display: inline-flex;
       align-items: center;
       gap: .6rem;
@@ -39,22 +45,28 @@
       font-weight: 600;
       letter-spacing: .08em;
       text-transform: uppercase;
-      padding: .8rem 1.4rem;
+      padding: .6rem 1.3rem .6rem .7rem;
       border: 2px solid #fff;
       border-radius: 999px;
       transition: background .15s, color .15s;
     }
-    .fb svg { width: 1.2em; height: 1.2em; fill: currentColor; }
-    .fb:hover, .fb:focus-visible { background: #fff; color: #000; outline: none; }
+    .social img { width: 28px; height: 28px; display: block; }
+    .social a:hover, .social a:focus-visible { background: #fff; color: #000; outline: none; }
   </style>
 </head>
 <body>
   <main class="badge">
     <img src="logo.png" alt="The Crash Combo" width="1049" height="1101">
   </main>
-  <a class="fb" href="https://www.facebook.com/crashcombo" rel="noopener">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-    Find us on Facebook
-  </a>
+  <nav class="social" aria-label="The Crash Combo on social media">
+    <a href="https://www.facebook.com/crashcombo" rel="noopener">
+      <img src="images/social/fb.png" alt="" width="28" height="28">
+      Facebook
+    </a>
+    <a href="https://www.instagram.com/thecrashcombo/" rel="noopener">
+      <img src="images/social/ig.png" alt="" width="28" height="28">
+      Instagram
+    </a>
+  </nav>
 </body>
 </html>
